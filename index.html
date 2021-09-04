@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oregano&display=swap" rel="stylesheet"> -->
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sign Up</title>
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oregano&display=swap');
+
+          body {
+               font-family: 'Montserrat', sans-serif;
+          }
+
+
+          .body-bg {
+               background-image: linear-gradient(#90B0FC, #B1ECFF, #FDF9F9);
+               /* background-image: linear-gradient(#90B0FC, #B1ECFF, #FDF9F9); */
+               /* background-image: linear-gradient(#90B0FC, #B1ECFF, #FDF9F9); */
+          }
+
+          h1 {
+               font-family: font-family: 'Oregano', cursive;
+          }
+
+          h4 {
+               display: flex;
+               flex-direction: row;
+          }
+
+          h4:before,
+          h4:after {
+               content: "";
+               flex: 1 1;
+               border-bottom: 0.3px solid #595757;
+               margin: auto;
+          }
+
+          input {
+               background-color: #FDF9F9;
+          }
+
+          ::-webkit-input-placeholder {
+               /* Chrome/Opera/Safari */
+               color: black;
+               font-size: small;
+          }
+
+          button:hover {
+               background-color: tomato;
+          }
+
+          /* .image-container {
+               position: relative;
+
+               img {
+                    position: absolute;
+                    animation-name: multiple-image-crossfade;
+                    animation-timing-function: ease-in-out;
+                    animation-iteration-count: infinite;
+                    animation-duration: 8s;
+
+                    &:nth-of-type(1) {
+                         animation-delay: 6s;
+                    }
+
+                    &:nth-of-type(2) {
+                         animation-delay: 4s;
+                    }
+
+                    &:nth-of-type(3) {
+                         animation-delay: 2s;
+                    }
+               }
+          }
+
+          @keyframes multiple-image-crossfade {
+               0% {
+                    opacity: 1;
+               }
+
+               17% {
+                    opacity: 1;
+               }
+
+               25% {
+                    opacity: 0;
+               }
+
+               92% {
+                    opacity: 0;
+               }
+
+               100% {
+                    opacity: 1; */
+          }
+          }
+     </style>
+
+
+</head>
+
+<body class="body-bg min-h-screen sm:mx:2 container mx-auto">
+
+     <div class="flex mx-auto sm:h-screen gap-5 sm:gap-20 flex-col sm:flex-row w-9/12 my-12">
+
+          <!-- artwork-section -->
+          <div class="flex sm:flex-col sm:gap-12 sm:justify-center mx-auto items-center">
+               <img class="w-1/2 sm:w-full xl:w-10/12" src="Img/1.png" alt="">
+               <p class="text-base sm:text-black text-center px-8 text-white leading-tight"> <b>CONNECT</b> WITH YOUR
+                    <b>SUPERFANS</b>
+               </p>
+          </div>
+
+          <div class="sm:flex flex-col sm:justify-center">
+               <!-- form-section -->
+               <form action="" class="form w-full lg:w-9/12 mx-auto rounded-3xl mt-5 p-3 pb-10 bg-white text-center shadow-xl">
+
+                    <h1 class="text-center text-5xl mt-6 " style="font-family: 'Oregano', cursive;">JoinMy.app</h1>
+
+                    <h4 class="paragraph my-7 px-3" style="font-size: 9px;"> &nbsp; &nbsp; SIGN UP &nbsp; &nbsp; </h4>
+
+                    <input class="text-sm sm:text-lg w-11/12 p-2 rounded-lg" type="text" placeholder="Email address">
+
+                    <input class="text-sm sm:text-lg my-2 w-11/12 p-2 sm:my-4 rounded-lg" type="number" placeholder="Mobile Number">
+
+                    <input class="text-sm sm:text-lg w-11/12 p-2 rounded-lg" type="text" placeholder="Instagram username">
+
+                    <p class="text-xs text-left mx-auto w-11/12 my-1 py-2">Refercode ( Optional )</p>
+                    <input class="text-sm sm:text-lg w-11/12 p-2 rounded-lg" type="text" placeholder="Referral code">
+
+                    <p class="text-xs p-3 my-2 w-11/12 mx-auto" style="font-size: 0.7em;">*By clicking Sign Up, you
+                         agree to
+                         our Terms, Privacy Policy and Platform Guidelines.</p>
+
+                    <button class="text-white text-xs px-4 py-3 font-bold rounded-3xl w-11/12"
+                         style="background-color: rgba(0, 0, 0, 0.71);">SIGN UP</button>
+                    <p class="text-xs py-2">Have an account <b>log in joinmy.app</b></p>
+
+               </form>
+
+               <!-- footer-section -->
+               <div class="w-full mx-auto">
+                    <div class="w-full mx-auto ">
+                         <p class="w-1/2 py-3 mx-auto font-bold text-xs text-center">10,000+ CREATROS 5CR + PAYMENTS
+                              MORE
+                              10LAC+ FANS 1 PLATFORM </p>
+                    </div>
+
+               </div>
+          </div>
+
+
+
+          <!-- <img id="image" src="Img/1.png" style="width:100px"> -->
+
+          <!-- <script>
+
+               var imageSources = ["Img/2.png", "Img/4.png", "Img/1.png"]
+
+               var index = 0;
+               setInterval(function () {
+                    if (index === imageSources.length) {
+                         index = 0;
+                    }
+                    document.getElementById("image").src = imageSources[index];
+                    index++;
+               }, 2000);
+
+          </script> -->
+
+</body>
+
+</html>
