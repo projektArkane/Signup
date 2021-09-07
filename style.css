@@ -7,6 +7,7 @@ body {
 
 .body-bg {
      background: linear-gradient(180deg, #90B0FC 0%, #B1ECFF 70.83%, #FDF9F9 97.92%);
+     /* background: linear-gradient(180deg, #A3D1D5 0%, #FFD2E7 70.83%, #FDF9F9 97.92%); */
      /* background: linear-gradient(180deg, #FE5A5A 24.48%, #EEAD88 49.48%, rgba(253, 162, 134, 0) 97.92%); */
      /* background: linear-gradient(180deg, #95F2AF 0%, #FFD2E7 70.83%, #FDF9F9 97.92%); */
 }
@@ -49,9 +50,9 @@ button:hover {
      background-size: cover;
      background-image: url("img/11.png");
      display: flex;
-     height: 50vmin;
-     width: 50vmin;
-     transition: background 1s linear;
+     height: 65vmin;
+     width: 65vmin;
+     transition: background 1.5s linear;
 }
 
 @media (max-width : 640px){
@@ -68,7 +69,7 @@ button:hover {
      }
 
      .image-styled {
-          margin-top: 60px;
+          margin-top: 50px;
      }
 }
 
@@ -79,7 +80,18 @@ button:hover {
      }
 
      .image-styled {
-          margin-top: 60px;
+          margin-top: 50px;
           /* transform: scale(1.15); */
+     }
+}
+
+@media (min-width : 1536px){
+     .image-styled {
+          margin-top: 0px;
+          transform: scale(0.8);
+     }
+
+     .artsec {
+          gap: 0px;
      }
 }
