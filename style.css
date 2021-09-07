@@ -60,6 +60,11 @@ button:hover {
           /* margin-top: 20px; */
           width: 100px;
      }
+
+     .image-styled {
+          height: 50vmin;
+          width: 50vmin;
+     }
 }
 
 @media (min-width : 640px){
