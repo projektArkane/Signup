@@ -3,108 +3,11 @@
 
 <head>
      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
-     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oregano&display=swap" rel="stylesheet"> -->
-
+     <link rel="stylesheet" href="style.css">
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Sign Up</title>
-     <style>
-          @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oregano&display=swap');
-
-          body {
-               font-family: 'Montserrat', sans-serif;
-          }
-
-
-          .body-bg {
-               background-image: linear-gradient(#90B0FC, #B1ECFF, #FDF9F9);
-               /* background-image: linear-gradient(#90B0FC, #B1ECFF, #FDF9F9); */
-               /* background-image: linear-gradient(#90B0FC, #B1ECFF, #FDF9F9); */
-          }
-
-          h1 {
-               font-family: font-family: 'Oregano', cursive;
-          }
-
-          h4 {
-               display: flex;
-               flex-direction: row;
-          }
-
-          h4:before,
-          h4:after {
-               content: "";
-               flex: 1 1;
-               border-bottom: 0.3px solid #595757;
-               margin: auto;
-          }
-
-          input {
-               background-color: #FDF9F9;
-          }
-
-          ::-webkit-input-placeholder {
-               /* Chrome/Opera/Safari */
-               color: black;
-               font-size: small;
-          }
-
-          button:hover {
-               background-color: tomato;
-          }
-
-          /* .image-container {
-               position: relative;
-
-               img {
-                    position: absolute;
-                    animation-name: multiple-image-crossfade;
-                    animation-timing-function: ease-in-out;
-                    animation-iteration-count: infinite;
-                    animation-duration: 8s;
-
-                    &:nth-of-type(1) {
-                         animation-delay: 6s;
-                    }
-
-                    &:nth-of-type(2) {
-                         animation-delay: 4s;
-                    }
-
-                    &:nth-of-type(3) {
-                         animation-delay: 2s;
-                    }
-               }
-          }
-
-          @keyframes multiple-image-crossfade {
-               0% {
-                    opacity: 1;
-               }
-
-               17% {
-                    opacity: 1;
-               }
-
-               25% {
-                    opacity: 0;
-               }
-
-               92% {
-                    opacity: 0;
-               }
-
-               100% {
-                    opacity: 1; */
-          }
-          }
-     </style>
-
-
 </head>
 
 <body class="body-bg min-h-screen sm:mx:2 container mx-auto">
@@ -112,16 +15,19 @@
      <div class="flex mx-auto sm:h-screen gap-5 sm:gap-20 flex-col sm:flex-row w-9/12 my-12 md:my-0">
 
           <!-- artwork-section -->
-          <div class="flex sm:flex-col sm:gap-12 sm:justify-center mx-auto items-center">
-               <img class="w-1/2 sm:w-full xl:w-10/12" src="Img/1.png" alt="">
-               <p class="text-base sm:text-black text-center px-8 text-white leading-tight"> <b>CONNECT</b> WITH YOUR
-                    <b>SUPERFANS</b>
-               </p>
+          <div class="artsec flex sm:flex-col w-full sm:w-2/5 sm:gap-12 sm:justify-center mx-auto items-center">
+               <div id="fadingImage" class="w-1/2 image-styled"></div>
+               <div class="w-1/2">
+                    <p id="taglines" class="text-base sm:text-black text-center mx-auto text-white leading-snug">
+                         <b>CREATE YOUR OWN APP</b> IN 2 MINUTES
+                    </p>
+               </div>
           </div>
 
-          <div class="sm:flex flex-col sm:justify-center">
+          <div class="formsec sm:flex flex-col sm:justify-center">
                <!-- form-section -->
-               <form action="" class="form w-full lg:w-9/12 mx-auto rounded-3xl mt-5 p-3 pb-10 bg-white text-center shadow-xl">
+               <form action=""
+                    class="form w-full lg:w-9/12 mx-auto rounded-3xl mt-5 p-3 pb-10 bg-white text-center shadow-xl">
 
                     <h1 class="text-center text-5xl mt-6 " style="font-family: 'Oregano', cursive;">JoinMy.app</h1>
 
@@ -129,9 +35,11 @@
 
                     <input class="text-sm sm:text-lg w-11/12 p-2 rounded-lg" type="text" placeholder="Email address">
 
-                    <input class="text-sm sm:text-lg my-2 w-11/12 p-2 sm:my-4 rounded-lg" type="number" placeholder="Mobile Number">
+                    <input class="text-sm sm:text-lg my-2 w-11/12 p-2 sm:my-4 rounded-lg" type="number"
+                         placeholder="Mobile Number">
 
-                    <input class="text-sm sm:text-lg w-11/12 p-2 rounded-lg" type="text" placeholder="Instagram username">
+                    <input class="text-sm sm:text-lg w-11/12 p-2 rounded-lg" type="text"
+                         placeholder="Instagram username">
 
                     <p class="text-xs text-left mx-auto w-11/12 my-1 py-2">Refercode ( Optional )</p>
                     <input class="text-sm sm:text-lg w-11/12 p-2 rounded-lg" type="text" placeholder="Referral code">
@@ -157,24 +65,72 @@
                </div>
           </div>
 
+          <!-- ========================================================================= -->
+
+          <script>
+
+               const imageEl = document.getElementById("fadingImage");
+               const tags = document.getElementById("taglines");
+               const images = [
+                    "Img/11.png",
+                    "Img/22.png",
+                    "Img/33.png",
+                    "Img/11.png",
+                    "Img/44.png",
+                    "Img/55.png"
+               ];
+
+               const diffTags = [
+                    // "<b>CREATE YOUR OWN APP</b> IN 2 MINUTES",
+                    "<b>WEEKLEY PAYOUT$</b> DIRCTLY IN YOUR ACCOUNT",
+                    "<b>CONNECT</b> WITH YOUR <b>SUPERFANS</b>",
+                    "<b>GO LIVE</b> FOR PAID OR FREE & GET GIFTS",
+                    "<b>CREATE MEMBERSHIPS</b> FOR PAID OR FREE & GET GIFTS",
+                    "<b>BRAND COLLABS</b> FOR PAID OR FREE & GET GIFTS"
+               ]
 
 
-          <!-- <img id="image" src="Img/1.png" style="width:100px"> -->
+               window.setInterval(changePicture, 2500);
+               let i = 0;
+               function changePicture() {
+                    i++;
+                    if (i > images.length - 1) i = 0;
+                    imageEl.style.backgroundImage = `url(${images[i]})`;
+               }
 
-          <!-- <script>
+               // =======================================================================
 
-               var imageSources = ["Img/2.png", "Img/4.png", "Img/1.png"]
+               window.setInterval(changeText, 2500);
+               let j = 0;
+               function changeText() {
+                    j++;
+                    if (j > diffTags.length - 1) j = 0;
+                    tags.innerHTML = diffTags[j];
+               }
 
-               var index = 0;
-               setInterval(function () {
-                    if (index === imageSources.length) {
-                         index = 0;
-                    }
-                    document.getElementById("image").src = imageSources[index];
-                    index++;
-               }, 2000);
 
-          </script> -->
+
+
+               // setTimeout(() => {
+               //      document.querySelector('.taglines').innerHTML = "<b>CREATE YOUR OWN APP</b> IN 2 MINUTES";
+               //      setTimeout(() => {
+               //           document.querySelector('.taglines').innerHTML = "<b>WEEKLEY PAYOUT$</b> DIRCTLY IN YOUR ACCOUNT";
+               //           setTimeout(() => {
+               //                document.querySelector('.taglines').innerHTML = "<b>CONNECT</b> WITH YOUR <b>SUPERFANS</b>";
+               //                setTimeout(() => {
+               //                     document.querySelector('.taglines').innerHTML = "<b>GO LIVE</b> FOR PAID OR FREE & GET GIFTS";
+               //                     setTimeout(() => {
+               //                          document.querySelector('.taglines').innerHTML = "<b>CREATE MEMBERSHIPS</b> FOR PAID OR FREE & GET GIFTS";
+               //                          setTimeout(() => {
+               //                               document.querySelector('.taglines').innerHTML = "<b>BRAND COLLABS</b> FOR PAID OR FREE & GET GIFTS";
+               //                          }, 2500)
+               //                     }, 2500)
+               //                }, 2500)
+               //           }, 2500)
+               //      }, 2500)
+               // }, 0)
+
+          </script>
 
 </body>
 
