@@ -34,30 +34,25 @@ input {
 }
 
 ::-webkit-input-placeholder {
-     /* Chrome/Opera/Safari */
      color: black;
      font-size: small;
 }
 
-button:hover {
-     background-color: tomato;
-}
 
 /* ============================================================== */
 
 .image-styled {
      background-position: center;
-     background-size: cover;
+     background-size: 20em;
      background-image: url("img/11.png");
-     display: flex;
-     height: 65vmin;
-     width: 65vmin;
-     transition: background 1.5s linear;
+     /* display: flex; */
+     height: 50vmin;
+     width: 50vmin;
+     /* transition: background 1.5s linear; */
 }
 
 @media (max-width : 640px){
      #taglines {
-          /* margin-top: 20px; */
           width: 100px;
      }
 
@@ -69,24 +64,29 @@ button:hover {
 
 @media (min-width : 640px){
      #taglines {
-          /* margin-top: 20px; */
           height: 80px;
      }
 
      .image-styled {
           margin-top: 50px;
+     }
+
+     /* .images {
+          transform: scale(2);
+     } */
+
+     img {
+          width:
      }
 }
 
 @media (min-width : 1024px){
      #taglines {
-          /* margin-top: 20px; */
           height: 80px;
      }
 
      .image-styled {
           margin-top: 50px;
-          /* transform: scale(1.15); */
      }
 }
 
